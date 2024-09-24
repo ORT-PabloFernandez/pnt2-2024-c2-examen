@@ -17,17 +17,7 @@ export default function MoviesDetails({ params }) {
     useEffect(() => {
         fetch(`https://mflixbackend.azurewebsites.net/api/movies?pageSize=${pageSize}&page=${page}`)
             .then(response => response.json())
-            .then(data => {
-                console.log("data from endpoint", data);
-                const foundMovie = data.find(movie => { console.log(movie._id); console.log(movie._id === id); movie._id === id })
-                // TODO found but not not setted
-                setMovies(foundMovie);
-                if (foundMovie) {
-                    console.log("Found movie!!!!!", foundMovie);
-                } else {
-                    console.log("Movie not found");
-                }
-            })
+            .then(data => setMovies(data.find(movie => movie._id === id)))
             .catch(error => console.log(error))
     }, [page, pageSize, id]);
 
