@@ -1,0 +1,43 @@
+.movie-list-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movie-page-title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button {
+    background-color: #f8bb04;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0a0404;
+    padding: 10px 20px;
+}
+
+.movies-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.movies-list-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.movie-poster {
+    width: 100px;
+    height: auto;
+}
+
+.movie-details{
+    flex-grow: 1;
+}
