@@ -13,10 +13,16 @@ export default function Producto(props) {
         <p>{props.fullplot}</p>
       </div>
       <div>
-        <Link href={`/peliculas/detalle/${props._id}`}>Detalles</Link>
+        <Link
+          href={`/peliculas/detalle/${props._id}?page=${props.numeroDePagina}`}
+        >
+          Detalles
+        </Link>
       </div>
       <div>
-        <Link href={`/peliculas/premios/${props._id}`}>
+        <Link
+          href={`/peliculas/premios/${props._id}?page=${props.numeroDePagina}`}
+        >
           Premios y Nominaciones
         </Link>
       </div>
