@@ -1,0 +1,40 @@
+.movie-card{
+    margin:0;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.movie-img{
+    display: block;
+    border-radius: 5%;
+    width: 100%;
+}
+
+.movie-text{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(2, 11, 18);
+}
+.movie-text h2{
+    padding-bottom: 10px;
+}
+
+.movie-buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.movie-element{
+    width: 50% - 10px;
+    margin: 5px;
+}
+
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
